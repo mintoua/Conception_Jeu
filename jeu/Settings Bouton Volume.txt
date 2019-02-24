@@ -1,0 +1,5 @@
+pvolume.x:558.5
+pvolume.y:276
+
+bouton width: 283.5 pxls
+bouton height: 62 pxls
