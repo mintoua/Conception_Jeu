@@ -1,4 +1,4 @@
-/* voilà quelques structures que j'ai pas resortir 
+/* voilà quelques structures que j'ai pu resortir 
 MINTOUA
 */
 
@@ -30,7 +30,7 @@ typedef struct
 typedef struct
 {
 	char nom[20]
-	int vies;
+	int vies;//on peut faire aussi sous forme des images
 	int score;
 	SDL_Rect pos_j;
 	entite_sec * tab_outil;
@@ -42,5 +42,11 @@ typedef struct
 	int nbre_enig;
 	background Tab_map[];
 }level;
+
+typedef struct 
+{
+	SDL_Rect positionEnigme;
+	SDL_Surface * imageEnigme;
+}enigme;
 
 #endif /* STRUCTURES_H_ */
