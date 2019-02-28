@@ -1,0 +1,5 @@
+pcharacters.x:465.5
+pcharacters.y:414
+
+bouton width: 474.8 pxls
+bouton height: 62 pxls
