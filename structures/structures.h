@@ -29,12 +29,17 @@ typedef struct
 
 /*J'ai modifié la structure joueur ( Hero), en mettant que ce dont on a besoin pour le moment*/
 
+typedef struct{
+	SDL_Rect positionTimer;
+	SDL_Surface *time;
+	int timer;
+}Timer;
 typedef struct
 {
 	SDL_Rect positionInit;
 	SDL_Rect positionMouv;
 	SDL_Surface *perso;
-	int timer;
+	Timer T;
 }Hero;
 
 typedef struct
