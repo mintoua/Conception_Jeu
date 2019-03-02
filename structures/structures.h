@@ -27,15 +27,15 @@ typedef struct
 	SDL_Rect pos;
 }entite_sec;
 
+/*J'ai modifié la structure joueur ( Hero), en mettant que ce dont on a besoin pour le moment*/
+
 typedef struct
 {
-	char nom[20]
-	int vies;//on peut faire aussi sous forme des images
-	int score;
-	SDL_Rect pos_j;
-	entite_sec * tab_outil;
-	
-}joueur;
+	SDL_Rect positionInit;
+	SDL_Rect positionMouv;
+	SDL_Surface *perso;
+	int timer;
+}Hero;
 
 typedef struct
 {
