@@ -9,6 +9,6 @@ void menu(SDL_Surface * screen);
 void setting_ingame(SDl_Surface * screen);
 void affPerso(Hero *A, SDL_Surface *ecran);
 void freePerso(Hero *A);
-void affScore(Hero *A,SDL_Surface *ecran,int Time,SDL_Surface *Timer,SDL_Rect *posTimer);
+void affScore(Hero *A,SDL_Surface *ecran,int Time);
 
 #endif /* FONCTIONS_H_ */
