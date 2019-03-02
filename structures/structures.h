@@ -48,7 +48,7 @@ typedef struct
 	background Tab_map[];
 }level;
 
-//L'énigme contient une variable réponse je pense que l'ajouter serait plus sage.
+//L'énigme contient une variable réponse je pense que l'ajouter serait plus juste.
 
 typedef struct
 {
