@@ -48,10 +48,13 @@ typedef struct
 	background Tab_map[];
 }level;
 
-typedef struct 
+//L'énigme contient une variable réponse je pense que l'ajouter serait plus sage.
+
+typedef struct
 {
-	SDL_Rect positionEnigme;
-	SDL_Surface * imageEnigme;
-}enigme;
+	SDL_Rect posEnigme;
+	SDL_Surface *enigme;
+	int reponse;
+}Enigme;
 
 #endif /* STRUCTURES_H_ */
