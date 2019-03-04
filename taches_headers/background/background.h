@@ -16,7 +16,7 @@ typedef struct
 	Mix_Music * son_but;
 }button;
 
-
+void init_bck(background tab[]);
 
 
 #endif /* BACKGROUND_H_ */
