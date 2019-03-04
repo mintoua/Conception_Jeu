@@ -12,5 +12,6 @@ void affScore(Hero *A,SDL_Surface *ecran,int Time);
 void freePerso(Hero *A);
 void affEnigme(Enigme E[],int numEnigme,SDL_Surface *ecran);
 void freeEnigme(Enigme E[],int nbEnigme);
+void countdown(int *etat, Hero A, int *tempsDepart,int *tempsActuel,int *n);
 
 #endif /* FONCTIONS_H_ */
