@@ -13,7 +13,7 @@ typedef struct
 void init_enigme(); 
 int affEnigme(Enigme E[],SDL_Surface *ecran);
 void freeEnigme(Enigme E[],int nbEnigme);
-int resolutio_enigme(Enigme E[], int alea, SDL_Event event)
+int resolutio_enigme(Enigme E[], int alea, SDL_Event event);
 void generation_aleatoire(); 
 
 
