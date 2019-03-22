@@ -1,14 +1,7 @@
-/*La personne dont la tâche est concernée peut modifier comme il veut
-les structure et même prototypes*/
+/*Mintoua Toupkandi*/
 
 #ifndef ENIGME_H_
 #define ENIGME_H_
-typedef struct
-{
-	SDL_Event evnt;
-	char nom;
-	SDL_Rect pos;
-}entite_sec;
 
 typedef struct
 {
@@ -18,14 +11,13 @@ typedef struct
 }Enigme;
 
 void init_enigme(); 
-void affEnigme(Enigme E[],int numEnigme,SDL_Surface *ecran);
+int affEnigme(Enigme E[],SDL_Surface *ecran);
 void freeEnigme(Enigme E[],int nbEnigme);
-void resolutio_enigme();
+int resolutio_enigme(Enigme E[], int alea, SDL_Event event)
 void generation_aleatoire(); 
 
 
-/*
-à vous de faire vos parametre et type de retour
-les concernés peuvent modifier
-*/
+
 #endif /* ENIGME_H_ */
+
+
