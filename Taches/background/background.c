@@ -15,8 +15,8 @@ background initialiser ()
 b.image=NULL ;
 b.music=NULL;
 b.texte=NULL;
-SDL_Surface *screen=NULL ;
-SDL_Event event;
+SDL_Surface *screen=NULL ;/*pour creer la surface///
+SDL_Event event; //pour gerer tous les evenements///
 
 /*afficher image*/
 
@@ -25,16 +25,16 @@ if(b.image==NULL)
 {printf("Unable to load image %s \n",SDL_GetError());
 
 }
-b.positionecran.x=0;
+b.positionecran.x=0; ///pointeur de SDL_rect (defines a rectangular area) et utilisé par SDL_blitsurface///
 b.positionecran.y=0;
 b.positionecran.w=b.image->w;
 b.positionecran.h=b.image->h;
 
 /*music*/
-if (Mix_OpenAudio(44100,MIX_DEFAULT_FORMAT,MIX_DEFAULT_CHANNELS,1024)==-1)
+if (Mix_OpenAudio(44100//frequence du son //,MIX_DEFAULT_FORMAT,MIX_DEFAULT_CHANNELS//nombre de channel(1) ,1024//frequence de l'echantillon //)=-1)///return -1 cas d'erreur return 0 s'il marche//
 {printf("%s",Mix_GetError());}
-b.music=Mix_LoadMUS("music.mp3");
-Mix_PlayMusic(b.music,-1);
+b.music=Mix_LoadMUS("background.mp3");
+Mix_PlayMusic(b.music,-1);//boucle infinie///
 
  return b;}
 void afficher (background b , SDL_Surface *screen) 

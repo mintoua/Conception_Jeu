@@ -4,7 +4,7 @@
 typedef struct
 {
 	SDL_Surface * image;
-	SDL_Rect position;
+	SDL_Rect positionecran;
 	Mix_Music * music;
 	TTF_Font *texte;
 }background;
@@ -16,7 +16,8 @@ typedef struct
 	Mix_Music * son_but;
 }button;
 
-void init_bck(background tab[]);
+background initialiser ()
+void afficher (background b , SDL_Surface *screen) 
 
 
 #endif /* BACKGROUND_H_ */
