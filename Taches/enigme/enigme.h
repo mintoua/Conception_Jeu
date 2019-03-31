@@ -10,6 +10,13 @@ typedef struct
 	SDL_Rect pos;
 }entite_sec;
 
+typedef struct
+{
+	SDL_Rect posEnigme;
+	SDL_Surface *Senigme;
+	int reponse;
+}Enigme;
+
 void init_enigme(); 
 void affEnigme(Enigme E[],int numEnigme,SDL_Surface *ecran);
 void freeEnigme(Enigme E[],int nbEnigme);
