@@ -6,15 +6,15 @@
 typedef struct
 {
 	SDL_Rect posEnigme;
-	SDL_Surface *Senigme;
+	SDL_Surface *SEnigme;
 	int reponse;
 }Enigme;
 
-void init_enigme(); 
+void init_enigme(Enigme E[]); 
 int affEnigme(Enigme E[],SDL_Surface *ecran);
-void freeEnigme(Enigme E[],int nbEnigme);
-int resolutio_enigme(Enigme E[], int alea, SDL_Event event);
-void generation_aleatoire(); 
+void freeEnigme(Enigme E[]);
+int resolution_enigme(Enigme E[], int alea, SDL_Event event);
+int enigme(Enigme E[],SDL_Surface * ecran);
 
 
 
