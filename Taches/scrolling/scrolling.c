@@ -1,8 +1,3 @@
-/* ecrire le code des fonctions et programme necessaire au scrolling
-*/
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL/SDL.h>
@@ -18,9 +13,9 @@ void scrolling (scorlling *scrol,SDL_Rect *positionpersonage )
 	{
 
 		case 1:
-			if (scrol->posback.x<6659)
+			if (scrol->posback.x<634)
                 		scrol->posback.x=scrol->posback.x+50;
-			if (((positionpersonage->x<450)||((scrol->posback.x>=6659))&&(positionpersonage->x<1166)))
+			if (((positionpersonage->x<450)||((scrol->posback.x>=634))&&(positionpersonage->x<1166)))
 				positionpersonage->x=positionpersonage->x+50;
 	
 		break;
@@ -31,9 +26,9 @@ void scrolling (scorlling *scrol,SDL_Rect *positionpersonage )
 				positionpersonage->x=positionpersonage->x-50;
 		break;
 		case 3:
-			if (scrol->posback.y<8261)
+			if (scrol->posback.y<1240)
                 		scrol->posback.y=scrol->posback.y+50;
-			if (((positionpersonage->y<450)||((scrol->posback.y>=8261))&&(positionpersonage->y<760)))
+			if (((positionpersonage->y<300)||((scrol->posback.y>=1240))&&(positionpersonage->y<300)))
 				positionpersonage->y=positionpersonage->y+50;
 		break;
 		case 4:
@@ -46,5 +41,7 @@ void scrolling (scorlling *scrol,SDL_Rect *positionpersonage )
 	}
 
 }
+
+
 
 
