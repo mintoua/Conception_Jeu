@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	SDL_Rect positionimage;
 	int continuer=1,s;
 	SDL_Init(SDL_INIT_VIDEO);
-	ecran=SDL_SetVideoMode(1280,720,32,SDL_HWSURFACE|SDL_DOUBLEBUF);
+	ecran=SDL_SetVideoMode(800,450,32,SDL_HWSURFACE|SDL_DOUBLEBUF);
 	image=IMG_Load("fond.jpg");
 	positionimage.x=0;
 	positionimage.y=0;
@@ -32,11 +32,12 @@ int main(int argc, char *argv[])
 				continuer=0;
 			break;
 			case SDL_KEYDOWN:
-				do {s=enigme(E,ecran);}while(s!=0);
-				continuer=0;
+				do {s=enigme(E,ecran); if(s==0){continuer=0;} }while(s!=0);
 			break;
 		}
+
 	}
+	//freeEnigme(E);
 	SDL_FreeSurface(image);
 	SDL_Quit();
 	return 0;

@@ -89,6 +89,7 @@ void freeEnigme(Enigme E[])
 	for(j = 0; j < 3; j++)
 	{ SDL_FreeSurface(E[j].SEnigme);}
 }
+
 int enigme(Enigme E[],SDL_Surface * ecran)
 {
 SDL_Event event; int i;
@@ -123,8 +124,7 @@ else
 		SDL_Delay(5000);
 return 1;
 }
-
-
+	
 	SDL_FreeSurface(image1);
 	SDL_FreeSurface(image2);
 }
