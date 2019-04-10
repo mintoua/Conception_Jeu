@@ -113,7 +113,7 @@ if(res == 1)
 	printf("\nReponse correcte");
 		SDL_BlitSurface(image1,NULL,ecran,&positionimage);
 		SDL_Flip(ecran);
-		SDL_Delay(5000);
+		SDL_Delay(3000);
 return 0;
 }
 else
@@ -121,7 +121,7 @@ else
                 printf("\nReponse incorrect\n");
 		SDL_BlitSurface(image2,NULL,ecran,&positionimage);
 		SDL_Flip(ecran);
-		SDL_Delay(5000);
+		SDL_Delay(3000);
 return 1;
 }
 	
