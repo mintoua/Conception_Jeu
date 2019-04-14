@@ -34,7 +34,11 @@ case SDL_MOUSEBUTTONUP:
 if (event.button.button==SDL_BUTTON_LEFT)
 {positionPersonnage.x =event.button.x - 45; //coordonnee du curseur
 //if (positionPersonnage.y + 10 < 200)
+<<<<<<< HEAD
 if (positionPersonnage.y  < 10)
+=======
+//if (positionPersonnage.y  < 10)
+>>>>>>> 4b951d2c9633fb41324dc7b031fc9653670d6d05
 positionPersonnage.y=event.button.y;
 break ;
 

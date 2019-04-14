@@ -3,7 +3,11 @@
 #include "SDL/SDL.h"
 #include <SDL/SDL_image.h>
 #include <SDL/SDL_mixer.h>
+<<<<<<< HEAD
 #include "clavier.h"
+=======
+
+>>>>>>> 4b951d2c9633fb41324dc7b031fc9653670d6d05
 
 int main(void)
 {
