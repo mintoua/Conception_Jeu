@@ -1,5 +1,19 @@
-#include "entete.h"
+/**
+* @file collision.c
+* @date Apr 28, 2019
+* @brief the collision functions
+* @version 0.1
+* @author Bilel Taktak
+*/
+#include "collision.h"
 
+/**
+* @brief get the pixels' color
+* @param pSurface the surface in which we'll compare the pixels
+* @param x the horizontal axis
+* @param y the vertical axis
+* @return Nothing
+*/
 SDL_Color GetPixel(SDL_Surface *pSurface,int x,int y)
 {
 	SDL_Color color;
@@ -19,6 +33,13 @@ SDL_Color GetPixel(SDL_Surface *pSurface,int x,int y)
 	return (color);
 }
 
+/**
+* @brief the perfect pixel function
+* @param calque the surface in which we'll compare the pixels 
+* @param coord_x the horizontal axis
+* @param coord_y the vertical axis
+* @return Nothing
+*/
 int collision_Parfaite(SDL_Surface *calque, int coord_x, int coord_y){
 
 	SDL_Color color;
