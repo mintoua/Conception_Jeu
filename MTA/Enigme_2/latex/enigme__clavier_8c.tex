@@ -1,0 +1,140 @@
+\hypertarget{enigme__clavier_8c}{}\section{Référence du fichier enigme\+\_\+clavier.\+c}
+\label{enigme__clavier_8c}\index{enigme\+\_\+clavier.\+c@{enigme\+\_\+clavier.\+c}}
+
+
+Writing Program.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}enigme\+\_\+clavier.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de enigme\+\_\+clavier.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enigme__clavier_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{enigme__clavier_8c_a6d388cc269cba866ddf559685d405be6}{afficher\+\_\+enigme} (S\+D\+L\+\_\+\+Surface $\ast$ecran, S\+D\+L\+\_\+\+Surface $\ast$chaine, T\+T\+F\+\_\+\+Font $\ast$police)
+\begin{DoxyCompactList}\small\item\em Pour afficher enigme. \end{DoxyCompactList}\item 
+int \hyperlink{enigme__clavier_8c_a36e5976175e9f189c2745ba884273dbe}{enigme\+\_\+clavier} (S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\begin{DoxyCompactList}\small\item\em Ecris le programme pour le resolution et affichage de l\textquotesingle{}enigme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Writing Program. 
+
+\begin{DoxyAuthor}{Auteur}
+Mintoua T Level-\/\+Up 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Apr 21, 2019
+\end{DoxyDate}
+Writing program for enigme 
+
+\subsection{Documentation des fonctions}
+\index{enigme\+\_\+clavier.\+c@{enigme\+\_\+clavier.\+c}!afficher\+\_\+enigme@{afficher\+\_\+enigme}}
+\index{afficher\+\_\+enigme@{afficher\+\_\+enigme}!enigme\+\_\+clavier.\+c@{enigme\+\_\+clavier.\+c}}
+\subsubsection[{\texorpdfstring{afficher\+\_\+enigme(\+S\+D\+L\+\_\+\+Surface $\ast$ecran, S\+D\+L\+\_\+\+Surface $\ast$chaine, T\+T\+F\+\_\+\+Font $\ast$police)}{afficher_enigme(SDL_Surface *ecran, SDL_Surface *chaine, TTF_Font *police)}}]{\setlength{\rightskip}{0pt plus 5cm}int afficher\+\_\+enigme (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{chaine, }
+\item[{T\+T\+F\+\_\+\+Font $\ast$}]{police}
+\end{DoxyParamCaption}
+)}\hypertarget{enigme__clavier_8c_a6d388cc269cba866ddf559685d405be6}{}\label{enigme__clavier_8c_a6d388cc269cba866ddf559685d405be6}
+
+
+Pour afficher enigme. 
+
+\begin{DoxyAuthor}{Auteur}
+Mintoua T Level-\/\+Up 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em ecran} & .c\textquotesingle{}est l\textquotesingle{}écran du jeu \\
+\hline
+{\em chaine} & .Pour la question de l\textquotesingle{}enigme \\
+\hline
+{\em police} & .La police des textes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+Apr 21, 2019 
+\end{DoxyDate}
+\begin{DoxyReturn}{Renvoie}
+numero de l\textquotesingle{}enigme(question) dans le fichier 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{enigme__clavier_8c_a6d388cc269cba866ddf559685d405be6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{enigme\+\_\+clavier.\+c@{enigme\+\_\+clavier.\+c}!enigme\+\_\+clavier@{enigme\+\_\+clavier}}
+\index{enigme\+\_\+clavier@{enigme\+\_\+clavier}!enigme\+\_\+clavier.\+c@{enigme\+\_\+clavier.\+c}}
+\subsubsection[{\texorpdfstring{enigme\+\_\+clavier(\+S\+D\+L\+\_\+\+Surface $\ast$ecran)}{enigme_clavier(SDL_Surface *ecran)}}]{\setlength{\rightskip}{0pt plus 5cm}int enigme\+\_\+clavier (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran}
+\end{DoxyParamCaption}
+)}\hypertarget{enigme__clavier_8c_a36e5976175e9f189c2745ba884273dbe}{}\label{enigme__clavier_8c_a36e5976175e9f189c2745ba884273dbe}
+
+
+Ecris le programme pour le resolution et affichage de l\textquotesingle{}enigme. 
+
+\begin{DoxyAuthor}{Auteur}
+Mintoua T Level-\/\+Up 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em ecran} & l\textquotesingle{}ecran du jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+entier (score ou vie) 
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+Apr 21, 2019
+\end{DoxyDate}
+Writing program for enigme 
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{enigme__clavier_8c_a36e5976175e9f189c2745ba884273dbe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{enigme__clavier_8c_a36e5976175e9f189c2745ba884273dbe_icgraph}
+\end{center}
+\end{figure}
+
+

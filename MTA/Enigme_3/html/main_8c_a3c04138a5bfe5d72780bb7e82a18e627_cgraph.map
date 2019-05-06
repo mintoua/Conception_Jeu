@@ -1,0 +1,8 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$jeu_8c.html#ad9c436fc5815440f57648231b18e2caf" title="Pour Afficher le jeu. " alt="" coords="104,81,155,108"/>
+<area shape="rect" id="node3" href="$text_8c.html#a783bd5709ee569e182097ecc03ae9392" title="Pour Charger le texte. " alt="" coords="203,5,275,32"/>
+<area shape="rect" id="node4" href="$text_8c.html#ab262a155d2f6fdeefc6ad6d63da93c82" title="Pour Initialiser le texte. " alt="" coords="206,56,271,83"/>
+<area shape="rect" id="node5" href="$enigme_8c.html#af3c9a532bad2669db67b723315a40e2a" title="Ecriture de la fonction enigme(affichage et resolution) " alt="" coords="207,107,271,133"/>
+<area shape="rect" id="node7" href="$text_8c.html#a6c91a76a6136671224fd357036b7e5b9" title="Pour Afficher le texte. " alt="" coords="323,157,412,184"/>
+<area shape="rect" id="node6" href="$random_8c.html#a61c7a4ac34762307c8ad873e71774a43" title="Pour calculer un nbre aleatoire. " alt="" coords="335,107,400,133"/>
+</map>

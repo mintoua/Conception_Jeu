@@ -1,0 +1,173 @@
+\hypertarget{text_8h}{}\section{Référence du fichier text.\+h}
+\label{text_8h}\index{text.\+h@{text.\+h}}
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\\*
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\\*
+Graphe des dépendances par inclusion de text.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{text_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{text_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structText}{Text}
+\begin{DoxyCompactList}\small\item\em struct for \hyperlink{structText}{Text} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structText}{Text} \hyperlink{text_8h_a230d9bf1ae79368f80b618fa0e4eda09}{Text}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{text_8h_ab262a155d2f6fdeefc6ad6d63da93c82}{init\+Text} (\hyperlink{structText}{Text} $\ast$T)
+\begin{DoxyCompactList}\small\item\em Pour Initialiser le texte. \end{DoxyCompactList}\item 
+int \hyperlink{text_8h_a783bd5709ee569e182097ecc03ae9392}{load\+Font} (T\+T\+F\+\_\+\+Font $\ast$$\ast$police)
+\begin{DoxyCompactList}\small\item\em Pour Charger le texte. \end{DoxyCompactList}\item 
+void \hyperlink{text_8h_a6c91a76a6136671224fd357036b7e5b9}{display\+Text} (T\+T\+F\+\_\+\+Font $\ast$police, \hyperlink{structText}{Text} $\ast$T, S\+D\+L\+\_\+\+Surface $\ast$screen, int vie, int score, int tmp)
+\begin{DoxyCompactList}\small\item\em Pour Afficher le texte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des définitions de type}
+\index{text.\+h@{text.\+h}!Text@{Text}}
+\index{Text@{Text}!text.\+h@{text.\+h}}
+\subsubsection[{\texorpdfstring{Text}{Text}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Text} {\bf Text}}\hypertarget{text_8h_a230d9bf1ae79368f80b618fa0e4eda09}{}\label{text_8h_a230d9bf1ae79368f80b618fa0e4eda09}
+
+
+\subsection{Documentation des fonctions}
+\index{text.\+h@{text.\+h}!display\+Text@{display\+Text}}
+\index{display\+Text@{display\+Text}!text.\+h@{text.\+h}}
+\subsubsection[{\texorpdfstring{display\+Text(\+T\+T\+F\+\_\+\+Font $\ast$police, Text $\ast$\+T, S\+D\+L\+\_\+\+Surface $\ast$screen, int vie, int score, int tmp)}{displayText(TTF_Font *police, Text *T, SDL_Surface *screen, int vie, int score, int tmp)}}]{\setlength{\rightskip}{0pt plus 5cm}void display\+Text (
+\begin{DoxyParamCaption}
+\item[{T\+T\+F\+\_\+\+Font $\ast$}]{police, }
+\item[{{\bf Text} $\ast$}]{T, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{int}]{vie, }
+\item[{int}]{score, }
+\item[{int}]{tmp}
+\end{DoxyParamCaption}
+)}\hypertarget{text_8h_a6c91a76a6136671224fd357036b7e5b9}{}\label{text_8h_a6c91a76a6136671224fd357036b7e5b9}
+
+
+Pour Afficher le texte. 
+
+\begin{DoxyAuthor}{Auteur}
+Mintoua T Level-\/\+Up 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$police} & Le pointeur sur la police des textes \\
+\hline
+{\em $\ast$T} & Le texte ecrit \\
+\hline
+{\em screen} & Ecran du jeu \\
+\hline
+{\em vie} & vie joueur \\
+\hline
+{\em score} & son score \\
+\hline
+{\em tmp} & temps du jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+Apr 28, 2019 
+\end{DoxyDate}
+\begin{DoxyReturn}{Renvoie}
+N\+U\+L\+L(rien) 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{text_8h_a6c91a76a6136671224fd357036b7e5b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{text.\+h@{text.\+h}!init\+Text@{init\+Text}}
+\index{init\+Text@{init\+Text}!text.\+h@{text.\+h}}
+\subsubsection[{\texorpdfstring{init\+Text(\+Text $\ast$\+T)}{initText(Text *T)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Text (
+\begin{DoxyParamCaption}
+\item[{{\bf Text} $\ast$}]{T}
+\end{DoxyParamCaption}
+)}\hypertarget{text_8h_ab262a155d2f6fdeefc6ad6d63da93c82}{}\label{text_8h_ab262a155d2f6fdeefc6ad6d63da93c82}
+
+
+Pour Initialiser le texte. 
+
+\begin{DoxyAuthor}{Auteur}
+Mintoua T Level-\/\+Up 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em T} & Le texte ecrit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+Apr 28, 2019 
+\end{DoxyDate}
+\begin{DoxyReturn}{Renvoie}
+void(rien) 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{text_8h_ab262a155d2f6fdeefc6ad6d63da93c82_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{text.\+h@{text.\+h}!load\+Font@{load\+Font}}
+\index{load\+Font@{load\+Font}!text.\+h@{text.\+h}}
+\subsubsection[{\texorpdfstring{load\+Font(\+T\+T\+F\+\_\+\+Font $\ast$$\ast$police)}{loadFont(TTF_Font **police)}}]{\setlength{\rightskip}{0pt plus 5cm}int load\+Font (
+\begin{DoxyParamCaption}
+\item[{T\+T\+F\+\_\+\+Font $\ast$$\ast$}]{police}
+\end{DoxyParamCaption}
+)}\hypertarget{text_8h_a783bd5709ee569e182097ecc03ae9392}{}\label{text_8h_a783bd5709ee569e182097ecc03ae9392}
+
+
+Pour Charger le texte. 
+
+\begin{DoxyAuthor}{Auteur}
+Mintoua T Level-\/\+Up 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$police} & Le pointeur sur la police des textes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+Apr 28, 2019 
+\end{DoxyDate}
+\begin{DoxyReturn}{Renvoie}
+E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+RE or E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+SS 
+\end{DoxyReturn}
+
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{text_8h_a783bd5709ee569e182097ecc03ae9392_icgraph}
+\end{center}
+\end{figure}
+
+
